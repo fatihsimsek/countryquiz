@@ -1,14 +1,22 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 function HomeView() {
+    const insets = useSafeAreaInsets();
+
     return (
-        <View><Text>Home</Text></View>
+        <View style={{...styles.mainContainer, paddingTop: insets.top}}>
+            <Text>Home</Text>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
-
+    mainContainer: {
+        flex:1,
+        justifyContent:'flex-start'
+    }
 });
 
 export default HomeView;

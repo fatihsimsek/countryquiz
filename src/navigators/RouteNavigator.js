@@ -24,6 +24,7 @@ function RouteNavigator() {
         <Tab.Screen name="Score" component={ScoreView} 
           options={{
             tabBarLabel: '',
+            headerShown: false,
             tabBarIcon: ({ color, size }) => (
               <StarIcon stroke={"gray"} size={size} />
             )}}
@@ -31,6 +32,7 @@ function RouteNavigator() {
         <Tab.Screen name="Settings" component={SettingsView} 
           options={{
             tabBarLabel: '',
+            headerShown: false,
             tabBarIcon: ({ color, size }) => (
               <SettingsIcon stroke={"gray"} size={size} />
             )}}
